@@ -35,20 +35,3 @@ int IO_getString(unsigned int length, char* character){
 		return 0;
 	}
 }
-
-int main(void){
-	
-	unsigned int MAX_LENGTH = 10;
-	char character[MAX_LENGTH];
-	int success;
-	printf("Bitte String eingeben: ");
-	success = IO_getString(MAX_LENGTH,character);
-	if(success == 0){
-		printf("Your String is %s.\n",character);
-		return 0;
-	}
-	else{
-		printf("Invalid Input.\n");
-		return 1;
-	}
-}
