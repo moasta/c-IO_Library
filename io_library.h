@@ -2,6 +2,6 @@
 #define _IO_LIBRARY_H
 
 int IO_getChar(char* character);
-void IO_getString(unsigned int length, char* character);
+int IO_getString(unsigned int length, char* character);
 
 #endif
